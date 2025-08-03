@@ -1,5 +1,2 @@
 #!/bin/bash
-for number in $(seq 1 2 99)
-do
-  echo "$number"
-done
+awk 'BEGIN {for(i=1;i<100;i+=2) print i}'
