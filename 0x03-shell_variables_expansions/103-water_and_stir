@@ -1,6 +1,2 @@
 #!/bin/bash
-water_num=$(echo "$WATER" | tr 'water' 01234)
-stir_clean=${STIR//./}
-stir_num=$(echo "$stir_clean" | tr 'stir' 0123)
-total=$((10#$water_num + 10#$stir_num))
-printf "%o" "$total" | tr '01234567' 'bestchol'
+echo $(( $(echo "$WATER" | tr "water" "01234") + $(echo "${STIR//./}" | tr "stir" "0123") )) | xargs printf "%o\n" | tr "01234567" "bestchol"
