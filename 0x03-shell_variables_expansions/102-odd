@@ -1,2 +1,2 @@
 #!/bin/bash
-awk 'BEGIN {for(i=1;i<100;i+=2) print i}'
+seq 1 2 99 | while read num; do echo "$num"; done
