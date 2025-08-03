@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $(( $(echo "$WATER" | tr "water" "01234") + $(echo "${STIR//./}" | tr "stir" "0123") )) | xargs printf "%o\n" | tr "01234567" "bestchol"
+echo $((5#$(echo "$WATER" | tr water 01234) + 4#$(echo "${STIR//./}" | tr stir 0123))) | xargs printf "%o\n" | tr "01234567" "bestchol"
