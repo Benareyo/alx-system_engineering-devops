@@ -1,2 +1,5 @@
 #!/bin/bash
-grep -n '^' | grep -E '^[0-9]*[13579]:'
+for number in $(seq 1 2 99)
+do
+  echo "$number"
+done
