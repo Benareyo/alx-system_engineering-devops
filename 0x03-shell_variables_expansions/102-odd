@@ -1,2 +1,2 @@
 #!/bin/bash
-seq 1 2 99 | while read num; do echo "$num"; done
+seq 1 2 99 | xargs -n1 echo
