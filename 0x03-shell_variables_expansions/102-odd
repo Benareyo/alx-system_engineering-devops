@@ -1,2 +1,2 @@
 #!/bin/bash
-sed -n 'p;n'
+grep -n '^' | grep -E '^[0-9]*[13579]:'
